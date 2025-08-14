@@ -1,0 +1,498 @@
+{
+  "quiz": {
+    "title": "QCM Complet - Methodes Agiles",
+    "description": "QCM complet sur les methodes agiles couvrant les fondamentaux, Scrum, autres methodes, pratiques et situations reelles",
+    "totalQuestions": 40,
+    "passingScore": 24,
+    "grading": {
+      "excellent": {
+        "min": 36,
+        "max": 40,
+        "message": "Excellent - Maitrise parfaite"
+      },
+      "veryGood": {
+        "min": 32,
+        "max": 35,
+        "message": "Très bien - Bonne maitrise"
+      },
+      "good": {
+        "min": 28,
+        "max": 31,
+        "message": "Bien - Connaissances solides"
+      },
+      "fair": { "min": 24, "max": 27, "message": "Assez bien - a consolider" },
+      "insufficient": {
+        "min": 0,
+        "max": 23,
+        "message": "Insuffisant - Revisions necessaires"
+      }
+    },
+    "questions": [
+      {
+        "id": 1,
+        "section": "Fondamentaux de l'Agilite",
+        "question": "Selon le Manifeste Agile, quelle est la priorite donnee ?",
+        "options": [
+          "Documentation exhaustive sur logiciel fonctionnel",
+          "Individus et interactions sur processus et outils",
+          "Negociation contractuelle sur collaboration avec le client",
+          "Suivi d'un plan sur adaptation au changement"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Manifeste Agile valorise les individus et interactions sur processus et outils."
+      },
+      {
+        "id": 2,
+        "section": "Fondamentaux de l'Agilite",
+        "question": "Combien de valeurs sont enoncees dans le Manifeste Agile ?",
+        "options": ["2", "4", "8", "12"],
+        "correctAnswer": 1,
+        "explanation": "Le Manifeste Agile contient exactement 4 valeurs fondamentales."
+      },
+      {
+        "id": 3,
+        "section": "Fondamentaux de l'Agilite",
+        "question": "Lequel de ces principes N'appartient PAS au Manifeste Agile ?",
+        "options": [
+          "Notre plus haute priorite est de satisfaire le client",
+          "Accueillir positivement les changements d'exigences",
+          "Documenter exhaustivement chaque fonctionnalite",
+          "Livrer frequemment un logiciel operationnel"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La documentation exhaustive contredit la valeur agile du logiciel fonctionnel sur documentation exhaustive."
+      },
+      {
+        "id": 4,
+        "section": "Fondamentaux de l'Agilite",
+        "question": "Quelle est la frequence recommandee pour les livraisons en Agile ?",
+        "options": [
+          "Une fois par an",
+          "Tous les 6 mois",
+          "De quelques semaines a quelques mois",
+          "Tous les jours"
+        ],
+        "correctAnswer": 2,
+        "explanation": "L'Agile promeut des livraisons frequentes, typiquement de quelques semaines a quelques mois."
+      },
+      {
+        "id": 5,
+        "section": "Fondamentaux de l'Agilite",
+        "question": "En Agile, qui doit travailler ensemble quotidiennement ?",
+        "options": [
+          "Seulement les developpeurs",
+          "Gens d'affaires et developpeurs",
+          "Seulement les chefs de projet",
+          "Clients et fournisseurs uniquement"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les gens d'affaires et developpeurs doivent travailler ensemble quotidiennement tout au long du projet."
+      },
+      {
+        "id": 6,
+        "section": "Framework Scrum",
+        "question": "Combien de rôles sont definis dans Scrum ?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": 1,
+        "explanation": "Scrum definit exactement 3 rôles : Product Owner, Scrum Master, et equipe de developpement."
+      },
+      {
+        "id": 7,
+        "section": "Framework Scrum",
+        "question": "Qui est responsable de la priorisation du Product Backlog ?",
+        "options": [
+          "Scrum Master",
+          "equipe de developpement",
+          "Product Owner",
+          "Le client directement"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Le Product Owner est seul responsable de la priorisation du Product Backlog."
+      },
+      {
+        "id": 8,
+        "section": "Framework Scrum",
+        "question": "Quelle est la duree maximale recommandee pour un Sprint ?",
+        "options": ["1 semaine", "2 semaines", "1 mois", "3 mois"],
+        "correctAnswer": 2,
+        "explanation": "Les Sprints ne doivent pas depasser 1 mois de duree."
+      },
+      {
+        "id": 9,
+        "section": "Framework Scrum",
+        "question": "Combien d'artefacts sont definis dans Scrum ?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": 1,
+        "explanation": "Scrum definit 3 artefacts : Product Backlog, Sprint Backlog, et Increment."
+      },
+      {
+        "id": 10,
+        "section": "Framework Scrum",
+        "question": "Quel evenement Scrum permet d'ameliorer continuellement le processus ?",
+        "options": [
+          "Sprint Planning",
+          "Daily Scrum",
+          "Sprint Review",
+          "Sprint Retrospective"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La Sprint Retrospective est specifiquement conçue pour que l'equipe s'inspecte et cree un plan d'amelioration."
+      },
+      {
+        "id": 11,
+        "section": "Framework Scrum",
+        "question": "Quelle est la duree maximale du Daily Scrum ?",
+        "options": ["10 minutes", "15 minutes", "30 minutes", "1 heure"],
+        "correctAnswer": 1,
+        "explanation": "Le Daily Scrum est limite a maximum 15 minutes."
+      },
+      {
+        "id": 12,
+        "section": "Framework Scrum",
+        "question": "Qui peut annuler un Sprint ?",
+        "options": [
+          "Scrum Master",
+          "equipe de developpement",
+          "Product Owner",
+          "Le client"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Seul le Product Owner a l'autorite d'annuler un Sprint."
+      },
+      {
+        "id": 13,
+        "section": "Framework Scrum",
+        "question": "Quelle est la duree maximale du Sprint Planning pour un Sprint de 1 mois ?",
+        "options": ["4 heures", "6 heures", "8 heures", "12 heures"],
+        "correctAnswer": 2,
+        "explanation": "Le Sprint Planning est limite a maximum 8 heures pour un Sprint d'un mois."
+      },
+      {
+        "id": 14,
+        "section": "Framework Scrum",
+        "question": "Le Definition of Done (DoD) est defini par :",
+        "options": [
+          "Le Product Owner uniquement",
+          "Le Scrum Master uniquement",
+          "L'equipe de developpement uniquement",
+          "Toute l'equipe Scrum"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La Definition of Done est creee et maintenue par toute l'equipe Scrum."
+      },
+      {
+        "id": 15,
+        "section": "Framework Scrum",
+        "question": "Combien d'evenements (ceremonies) sont definis dans Scrum ?",
+        "options": ["3", "4", "5", "6"],
+        "correctAnswer": 2,
+        "explanation": "Scrum definit 5 evenements : Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective."
+      },
+      {
+        "id": 16,
+        "section": "Autres Methodes Agiles",
+        "question": "En Kanban, que signifie \"WIP\" ?",
+        "options": [
+          "Work In Process",
+          "Work In Progress",
+          "Weekly Iteration Planning",
+          "Work Item Priority"
+        ],
+        "correctAnswer": 1,
+        "explanation": "WIP signifie Work In Progress - travail en cours."
+      },
+      {
+        "id": 17,
+        "section": "Autres Methodes Agiles",
+        "question": "Quel est le principe fondamental de Kanban ?",
+        "options": [
+          "Iterations fixes",
+          "Flux tire (pull)",
+          "Planification detaillee",
+          "Documentation exhaustive"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Kanban est base sur le principe de flux tire (pull system)."
+      },
+      {
+        "id": 18,
+        "section": "Autres Methodes Agiles",
+        "question": "Dans XP (Extreme Programming), quelle pratique consiste a ecrire les tests avant le code ?",
+        "options": [
+          "Refactoring",
+          "Test-Driven Development (TDD)",
+          "Pair Programming",
+          "Continuous Integration"
+        ],
+        "correctAnswer": 1,
+        "explanation": "TDD (Test-Driven Development) consiste a ecrire les tests avant le code."
+      },
+      {
+        "id": 19,
+        "section": "Autres Methodes Agiles",
+        "question": "Quelle methode agile utilise des \"User Stories\" comme unite de travail principale ?",
+        "options": [
+          "Kanban uniquement",
+          "Scrum uniquement",
+          "XP uniquement",
+          "Scrum et XP"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Scrum et XP utilisent tous deux les User Stories comme unite de travail principale."
+      },
+      {
+        "id": 20,
+        "section": "Autres Methodes Agiles",
+        "question": "En Lean, quel concept vise a eliminer le gaspillage ?",
+        "options": ["Muda", "Kaizen", "Gemba", "Poka-yoke"],
+        "correctAnswer": 0,
+        "explanation": "Muda est le concept Lean qui designe le gaspillage a eliminer."
+      },
+      {
+        "id": 21,
+        "section": "Pratiques et Outils",
+        "question": "Une User Story doit respecter le critère INVEST. Que signifie le \"I\" ?",
+        "options": ["Important", "Independent", "Interesting", "Incremental"],
+        "correctAnswer": 1,
+        "explanation": "Dans INVEST, le \"I\" signifie Independent - la story doit etre independante."
+      },
+      {
+        "id": 22,
+        "section": "Pratiques et Outils",
+        "question": "Quel outil permet de visualiser l'avancement d'un Sprint ?",
+        "options": ["Gantt Chart", "Burndown Chart", "Pie Chart", "Flow Chart"],
+        "correctAnswer": 1,
+        "explanation": "Le Burndown Chart visualise l'avancement du travail dans un Sprint."
+      },
+      {
+        "id": 23,
+        "section": "Pratiques et Outils",
+        "question": "En Planning Poker, quelle suite de nombres est generalement utilisee ?",
+        "options": [
+          "1, 2, 3, 4, 5, 6, 7, 8",
+          "Fibonacci : 1, 2, 3, 5, 8, 13, 21",
+          "10, 20, 30, 40, 50, 60",
+          "1, 4, 9, 16, 25, 36"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Planning Poker utilise generalement la suite de Fibonacci modifiee."
+      },
+      {
+        "id": 24,
+        "section": "Pratiques et Outils",
+        "question": "Quelle technique permet d'identifier les obstacles en Daily Scrum ?",
+        "options": [
+          "Planning Poker",
+          "Les 3 questions standard",
+          "Burndown Chart",
+          "Retrospective"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les 3 questions standard du Daily Scrum permettent d'identifier les obstacles."
+      },
+      {
+        "id": 25,
+        "section": "Pratiques et Outils",
+        "question": "En Scrum, la velocite de l'equipe se mesure en :",
+        "options": [
+          "Nombre de tâches par Sprint",
+          "Heures travaillees par Sprint",
+          "Story Points completes par Sprint",
+          "Nombre de bugs resolus par Sprint"
+        ],
+        "correctAnswer": 2,
+        "explanation": "La velocite se mesure en Story Points completes par Sprint."
+      },
+      {
+        "id": 26,
+        "section": "Situations et Cas Pratiques",
+        "question": "Un client change ses exigences au milieu du Sprint. Que faire ?",
+        "options": [
+          "Arreter le Sprint immediatement",
+          "Noter le changement pour le Sprint suivant",
+          "Modifier le Sprint Backlog en cours",
+          "Organiser une reunion d'urgence"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les changements doivent etre notes et pris en compte au Sprint suivant."
+      },
+      {
+        "id": 27,
+        "section": "Situations et Cas Pratiques",
+        "question": "L'equipe n'arrive pas a terminer toutes les User Stories du Sprint. Que se passe-t-il ?",
+        "options": [
+          "Le Sprint est prolonge",
+          "Les Stories non terminees retournent au Product Backlog",
+          "L'equipe travaille en heures supplementaires",
+          "Le Sprint est considere comme echoue"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les Stories non terminees retournent au Product Backlog pour repriorisation."
+      },
+      {
+        "id": 28,
+        "section": "Situations et Cas Pratiques",
+        "question": "Quelle est la meilleure pratique pour la taille d'une equipe Scrum ?",
+        "options": [
+          "3-5 personnes",
+          "5-9 personnes",
+          "10-15 personnes",
+          "Plus de 15 personnes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La taille optimale d'une equipe Scrum est de 5-9 personnes."
+      },
+      {
+        "id": 29,
+        "section": "Situations et Cas Pratiques",
+        "question": "Si le Product Owner n'est pas disponible, qui peut le remplacer temporairement ?",
+        "options": [
+          "Le Scrum Master",
+          "Un membre de l'equipe de developpement",
+          "Le manager",
+          "Personne, il faut attendre son retour"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Le Product Owner ne peut pas etre remplace temporairement, il faut attendre son retour."
+      },
+      {
+        "id": 30,
+        "section": "Situations et Cas Pratiques",
+        "question": "En fin de Sprint, une fonctionnalite est codee mais non testee. Elle fait partie :",
+        "options": [
+          "De l'Increment du Sprint",
+          "Du Sprint suivant automatiquement",
+          "D'une release ulterieure",
+          "Elle n'est pas consideree comme \"Done\""
+        ],
+        "correctAnswer": 3,
+        "explanation": "Sans tests, la fonctionnalite ne respecte pas la Definition of Done."
+      },
+      {
+        "id": 31,
+        "section": "Metriques et Amelioration Continue",
+        "question": "Quel indicateur mesure la capacite de livraison de l'equipe ?",
+        "options": ["Burndown", "Velocite", "Lead Time", "Cycle Time"],
+        "correctAnswer": 1,
+        "explanation": "La velocite mesure la capacite de livraison de l'equipe."
+      },
+      {
+        "id": 32,
+        "section": "Metriques et Amelioration Continue",
+        "question": "Dans un Burndown Chart, que represente l'axe des ordonnees ?",
+        "options": [
+          "Le temps",
+          "Le travail restant",
+          "Le nombre de personnes",
+          "Le budget"
+        ],
+        "correctAnswer": 1,
+        "explanation": "L'axe des ordonnees represente le travail restant a accomplir."
+      },
+      {
+        "id": 33,
+        "section": "Metriques et Amelioration Continue",
+        "question": "Quelle ceremonie permet l'amelioration continue de l'equipe ?",
+        "options": [
+          "Sprint Planning",
+          "Daily Scrum",
+          "Sprint Review",
+          "Sprint Retrospective"
+        ],
+        "correctAnswer": 3,
+        "explanation": "La Sprint Retrospective est dediee a l'amelioration continue."
+      },
+      {
+        "id": 34,
+        "section": "Metriques et Amelioration Continue",
+        "question": "Le \"Lead Time\" en Kanban mesure :",
+        "options": [
+          "Le temps de developpement seulement",
+          "Le temps total de la demande a la livraison",
+          "Le temps de test uniquement",
+          "Le temps de planification"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Lead Time mesure le temps total de la demande a la livraison."
+      },
+      {
+        "id": 35,
+        "section": "Metriques et Amelioration Continue",
+        "question": "Une equipe a une velocite moyenne de 30 points par Sprint. Le Product Backlog contient 120 points. Combien de Sprints sont necessaires ?",
+        "options": [
+          "3 Sprints",
+          "4 Sprints",
+          "5 Sprints",
+          "Impossible a determiner"
+        ],
+        "correctAnswer": 1,
+        "explanation": "120 points ÷ 30 points par Sprint = 4 Sprints necessaires."
+      },
+      {
+        "id": 36,
+        "section": "Defis et Adaptations",
+        "question": "Comment gerer un projet agile avec des equipes distribuees ?",
+        "options": [
+          "eviter absolument cette situation",
+          "Utiliser des outils de communication adaptes",
+          "Revenir aux methodes traditionnelles",
+          "Augmenter la duree des Sprints"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Les outils de communication adaptes permettent de gerer des equipes distribuees."
+      },
+      {
+        "id": 37,
+        "section": "Defis et Adaptations",
+        "question": "Dans quel cas l'Agile est-il MOINS approprie ?",
+        "options": [
+          "Exigences changeantes",
+          "Projets innovants",
+          "Environnement reglemente strict",
+          "equipe experimentee"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Un environnement reglemente strict peut limiter l'adaptabilite agile."
+      },
+      {
+        "id": 38,
+        "section": "Defis et Adaptations",
+        "question": "Comment integrer un client peu disponible dans un projet agile ?",
+        "options": [
+          "Continuer sans lui",
+          "Designer un proxy Product Owner",
+          "Reporter le projet",
+          "Changer de methodologie"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Un proxy Product Owner peut representer le client peu disponible."
+      },
+      {
+        "id": 39,
+        "section": "Defis et Adaptations",
+        "question": "Quel est le principal defi de la mise a l'echelle agile ?",
+        "options": [
+          "Former plus de Scrum Masters",
+          "Coordonner plusieurs equipes",
+          "Augmenter le budget",
+          "Rallonger les Sprints"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La coordination entre plusieurs equipes est le principal defi de la mise a l'echelle."
+      },
+      {
+        "id": 40,
+        "section": "Defis et Adaptations",
+        "question": "En cas de conflit dans l'equipe, qui doit intervenir en premier ?",
+        "options": [
+          "Le Product Owner",
+          "Le Scrum Master",
+          "Le manager hierarchique",
+          "Les RH"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Le Scrum Master doit intervenir en premier pour resoudre les conflits d'equipe."
+      }
+    ]
+  }
+}

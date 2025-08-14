@@ -1,0 +1,27 @@
+# Compiled class files
+*.class
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+out/
+
+# Maven/Gradle build folders (if used)
+target/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# If you have local database files you don’t want to commit
+lib/*.db
+
