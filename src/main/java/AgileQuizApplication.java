@@ -98,8 +98,8 @@ public class AgileQuizApplication {
 
             // Show progress
             if ((i + 1) % 10 == 0 || i == questions.size() - 1) {
-                System.out.println(String.format("\nProgress: %d/%d questions completed",
-                        i + 1, questions.size()));
+                System.out.printf("\nProgress: %d/%d questions completed%n",
+                        i + 1, questions.size());
             }
 
             System.out.println();
@@ -107,7 +107,7 @@ public class AgileQuizApplication {
     }
 
     private void displayQuestion(int questionNumber, Question question) {
-        System.out.println(String.format("Question %d/%d", questionNumber, questions.size()));
+        System.out.printf("Question %d/%d%n", questionNumber, questions.size());
         System.out.println("Section: " + question.getSection());
         System.out.println("-".repeat(50));
         System.out.println(question.getQuestion());
@@ -115,13 +115,13 @@ public class AgileQuizApplication {
 
         List<String> options = question.getOptions();
         for (int i = 0; i < options.size(); i++) {
-            System.out.println(String.format("%c) %s", 'a' + i, options.get(i)));
+            System.out.printf("%c) %s%n", 'a' + i, options.get(i));
         }
     }
 
     private int getUserChoice(int maxOptions) {
         while (true) {
-            System.out.print(String.format("\nYour answer (a-%c): ", 'a' + maxOptions - 1));
+            System.out.printf("\nYour answer (a-%c): ", 'a' + maxOptions - 1);
             String input = scanner.nextLine().toLowerCase().trim();
 
             if (input.length() == 1 && input.charAt(0) >= 'a' &&
@@ -158,8 +158,8 @@ public class AgileQuizApplication {
         double percentage = (double) correctAnswers / totalQuestions * 100;
 
         // Overall results
-        System.out.println(String.format("Score: %d/%d (%.1f%%)",
-                correctAnswers, totalQuestions, percentage));
+        System.out.printf("Score: %d/%d (%.1f%%)%n",
+                correctAnswers, totalQuestions, percentage);
 
         // Grade determination
         JsonNode grading = quizData.get("quiz").get("grading");
