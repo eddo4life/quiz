@@ -153,7 +153,7 @@ public class AgileQuizApplication {
         System.out.println("                   QUIZ COMPLETED");
         System.out.println("=".repeat(60));
 
-        int correctAnswers = (int) userAnswers.stream().mapToInt(a -> a.isCorrect() ? 1 : 0).sum();
+        int correctAnswers = userAnswers.stream().mapToInt(a -> a.isCorrect() ? 1 : 0).sum();
         int totalQuestions = questions.size();
         double percentage = (double) correctAnswers / totalQuestions * 100;
 
@@ -284,14 +284,10 @@ public class AgileQuizApplication {
         }
     }
 
-    class UserAnswer {
-        private String questionId;
-        private int chosenOption;
-        private boolean correct;
+    static class UserAnswer {
+        private final boolean correct;
 
         public UserAnswer(String questionId, int chosenOption, boolean correct) {
-            this.questionId = questionId;
-            this.chosenOption = chosenOption;
             this.correct = correct;
         }
 
