@@ -7,7 +7,7 @@ import java.util.*;
 public class AgileQuizApplication {
     private static final String QUIZ_FILE = "agile_quiz.json";
     private static final Scanner scanner = new Scanner(System.in);
-    private static ObjectMapper objectMapper = new ObjectMapper();
+    private static final ObjectMapper objectMapper = new ObjectMapper();
 
     private JsonNode quizData;
     private List<Question> questions;
@@ -230,7 +230,7 @@ public class AgileQuizApplication {
 
     private void showStudyRecommendations() {
         System.out.println("\nStudy Recommendations:");
-        if (userAnswers.stream().filter(a -> a.isCorrect()).count() < questions.size()) {
+        if (userAnswers.stream().filter(UserAnswer::isCorrect).count() < questions.size()) {
             System.out.println("- Review Agile principles and the sections where you scored less.");
             System.out.println("- Revisit Scrum roles, events, and artifacts.");
             System.out.println("- Practice PERT and project cost exercises.");
@@ -239,13 +239,13 @@ public class AgileQuizApplication {
         }
     }
 
-    class Question {
-        private String id;
-        private String section;
-        private String question;
-        private List<String> options;
-        private int correctAnswer;
-        private String explanation;
+    static class Question {
+        private final String id;
+        private final String section;
+        private final String question;
+        private final List<String> options;
+        private final int correctAnswer;
+        private final String explanation;
 
         public Question(JsonNode node) {
             this.id = node.get("id").asText();
