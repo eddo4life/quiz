@@ -88,7 +88,7 @@ public class AgileQuizApplication {
             displayQuestion(i + 1, question);
 
             int userChoice = getUserChoice(question.getOptions().size());
-            UserAnswer answer = new UserAnswer(question.getId(), userChoice,
+            UserAnswer answer = new UserAnswer(
                     userChoice == question.getCorrectAnswer());
             userAnswers.add(answer);
 
@@ -287,7 +287,7 @@ public class AgileQuizApplication {
     static class UserAnswer {
         private final boolean correct;
 
-        public UserAnswer(String questionId, int chosenOption, boolean correct) {
+        public UserAnswer(boolean correct) {
             this.correct = correct;
         }
 
