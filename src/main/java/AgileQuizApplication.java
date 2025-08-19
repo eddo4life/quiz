@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -192,16 +193,15 @@ public class AgileQuizApplication {
         } else if (score >= grading.get("fair").get("min").asInt()) {
             return grading.get("fair").get("message").asText();
         } else {
-            return grading.get("poor").get("message").asText();
+            return grading.get("insufficient").get("message").asText();
         }
     }
 
     private void showSectionBreakdown() {
         Map<String, int[]> sectionStats = new HashMap<>(); // [correct, total]
-
         for (int i = 0; i < questions.size(); i++) {
             String section = questions.get(i).getSection();
-            boolean correct = userAnswers.get(i).isCorrect();
+            boolean correct = userAnswers.get(i).isCorrect(); // TODO:handle case where questions.size would > userAnswers.size
             sectionStats.putIfAbsent(section, new int[2]);
             sectionStats.get(section)[0] += correct ? 1 : 0;
             sectionStats.get(section)[1]++;
@@ -284,12 +284,7 @@ public class AgileQuizApplication {
         }
     }
 
-    static class UserAnswer {
-        private final boolean correct;
-
-        public UserAnswer(boolean correct) {
-            this.correct = correct;
-        }
+    record UserAnswer(boolean correct) {
 
         public boolean isCorrect() {
             return correct;
