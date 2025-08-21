@@ -240,7 +240,6 @@ public class AgileQuizApplication {
     }
 
     static class Question {
-        private final String id;
         private final String section;
         private final String question;
         private final List<String> options;
@@ -248,7 +247,6 @@ public class AgileQuizApplication {
         private final String explanation;
 
         public Question(JsonNode node) {
-            this.id = node.get("id").asText();
             this.section = node.get("section").asText();
             this.question = node.get("question").asText();
             this.options = new ArrayList<>();
@@ -257,10 +255,6 @@ public class AgileQuizApplication {
             }
             this.correctAnswer = node.get("correctAnswer").asInt();
             this.explanation = node.get("explanation").asText();
-        }
-
-        public String getId() {
-            return id;
         }
 
         public String getSection() {
